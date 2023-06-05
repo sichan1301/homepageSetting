@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+/* reset */
+
+@charset "utf-8"; 
+ 
+body, h1,h2,h3,h4,h5,h6, p, dl, dt,dd,ul,ol,li,
+blockquote, fieldset
+{ margin:0; padding:0; }
+
+a { text-decoration:none;color:inherit;}
+mark { background-color:transparent; color:inherit;}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size:inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,h2,h3,h4,h5,h6,strong,b,th {
+    font-weight:inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul,ol,li {
+    list-style:none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+i, em, address {
+    font-style:inherit;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+    border-spacing:0;
+    border-collapse:collapse;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+th, td {
+    border:1px solid red;
+}
+
+fieldset {
+    border:none; /* border:0 */
+    /* border: width style color */ 
+}
+
+input[type="text"]::placeholder {
+    color:olive;
+    font-style:italic;
+}
+
+input[type="text"]:focus {
+    background-color:olive;
+    color:#fff;
+}
+
+input[type="search"] {
+    
+}
+
+input[type="checkbox"] {
+
+}
+
+input[type="radio"] {
+
+}
+
+button {
+    cursor:pointer;
+    border:none;
+    background-color:transparent;
+}
+
+caption {
+  /* caption-side: bottom; */
+}
+
+.blind, hr, legend {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+
+q:before, 
+q:after {
+    content:'';
 }
